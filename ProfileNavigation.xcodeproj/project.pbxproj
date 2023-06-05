@@ -11,6 +11,9 @@
 		07736FD22A2E0AEC00FBF297 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07736FD12A2E0AEC00FBF297 /* ContentView.swift */; };
 		07736FD42A2E0AED00FBF297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07736FD32A2E0AED00FBF297 /* Assets.xcassets */; };
 		07736FD72A2E0AED00FBF297 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07736FD62A2E0AED00FBF297 /* Preview Assets.xcassets */; };
+		07736FE12A2E0B2300FBF297 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07736FE02A2E0B2300FBF297 /* User.swift */; };
+		07736FE42A2E0C7C00FBF297 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07736FE32A2E0C7C00FBF297 /* ProfileView.swift */; };
+		07736FE72A2E0CD400FBF297 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07736FE62A2E0CD400FBF297 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		07736FD12A2E0AEC00FBF297 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		07736FD32A2E0AED00FBF297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07736FD62A2E0AED00FBF297 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07736FE02A2E0B2300FBF297 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07736FE32A2E0C7C00FBF297 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		07736FE62A2E0CD400FBF297 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,9 @@
 		07736FCE2A2E0AEC00FBF297 /* ProfileNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				07736FCF2A2E0AEC00FBF297 /* ProfileNavigationApp.swift */,
-				07736FD12A2E0AEC00FBF297 /* ContentView.swift */,
+				07736FDF2A2E0B0E00FBF297 /* Core */,
+				07736FDE2A2E0B0500FBF297 /* Models */,
+				07736FDD2A2E0AFE00FBF297 /* App */,
 				07736FD32A2E0AED00FBF297 /* Assets.xcassets */,
 				07736FD52A2E0AED00FBF297 /* Preview Content */,
 			);
@@ -65,6 +72,48 @@
 				07736FD62A2E0AED00FBF297 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07736FDD2A2E0AFE00FBF297 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				07736FCF2A2E0AEC00FBF297 /* ProfileNavigationApp.swift */,
+				07736FD12A2E0AEC00FBF297 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		07736FDE2A2E0B0500FBF297 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07736FE02A2E0B2300FBF297 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07736FDF2A2E0B0E00FBF297 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				07736FE52A2E0CB700FBF297 /* Components */,
+				07736FE22A2E0C7000FBF297 /* Profile */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		07736FE22A2E0C7000FBF297 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				07736FE32A2E0C7C00FBF297 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		07736FE52A2E0CB700FBF297 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				07736FE62A2E0CD400FBF297 /* HeaderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07736FE72A2E0CD400FBF297 /* HeaderView.swift in Sources */,
+				07736FE42A2E0C7C00FBF297 /* ProfileView.swift in Sources */,
 				07736FD22A2E0AEC00FBF297 /* ContentView.swift in Sources */,
 				07736FD02A2E0AEC00FBF297 /* ProfileNavigationApp.swift in Sources */,
+				07736FE12A2E0B2300FBF297 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
