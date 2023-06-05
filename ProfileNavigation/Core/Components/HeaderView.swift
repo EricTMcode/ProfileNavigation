@@ -18,10 +18,18 @@ struct HeaderView: View {
                 .overlay(RoundedRectangle(cornerRadius: 40)
                     .stroke(Color.purple, lineWidth: 2))
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text("\(user.displayName)")
+                    .bold()
+                
+                Text("Joined November 1st")
+                    .foregroundColor(.gray)
             }
+            .padding(.leading, 5)
+            
+            Spacer()
         }
+        .padding(.horizontal)
     }
 }
 

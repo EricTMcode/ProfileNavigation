@@ -10,6 +10,15 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         VStack {
+            HeaderView(user: User.mockUser)
+            
+            InfoView()
+            
+            FollowCountView(followers: User.allUsers, following: User.allUsers)
+            
+            EditButton()
+            
+            PostListView()
             
         }
     }
