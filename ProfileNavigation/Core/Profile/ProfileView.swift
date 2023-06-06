@@ -24,6 +24,16 @@ struct ProfileView: View {
                 PostListView()
                 
             }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: Route.self) { route in
+                switch route {
+                case .followers:
+                    FollowersView(followers: User.allUsers)
+                case .following:
+                    FollowingView(following: User.allUsers)
+                }
+            }
         }
     }
 }

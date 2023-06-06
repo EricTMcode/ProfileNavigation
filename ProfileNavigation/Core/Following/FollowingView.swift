@@ -18,6 +18,8 @@ struct FollowingView: View {
                 }
             }
         }
+        .navigationTitle("Following")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

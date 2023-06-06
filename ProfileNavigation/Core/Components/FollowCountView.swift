@@ -16,20 +16,25 @@ struct FollowCountView: View {
             
             Spacer()
             
-            VStack {
-                Text("\(followers.count)")
-                Text("Followers")
+            NavigationLink(value: Route.followers){
+                VStack {
+                    Text("\(followers.count)")
+                    Text("Followers")
+                }
             }
             
             Spacer()
             
-            VStack {
-                Text("\(following.count)")
-                Text("Following")
+            NavigationLink(value: Route.following) {
+                VStack {
+                    Text("\(following.count)")
+                    Text("Following")
+                }
             }
             
             Spacer()
         }
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
