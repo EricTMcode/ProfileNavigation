@@ -38,9 +38,11 @@ struct ProfileView: View {
             .navigationDestination(for: Route.self) { route in
                 switch route {
                 case .followers:
-                    FollowersView(followers: User.allUsers)
+                    FollowersView(followers: vm.currentUser.followers)
                 case .following:
-                    FollowingView(following: User.allUsers)
+                    FollowingView(following: vm.currentUser.following)
+                case let .otherProfile(otherUserId):
+                    OtherProfileView(vm: vm, otherUserId: otherUserId)
                 }
             }
         }
