@@ -9,20 +9,29 @@ import SwiftUI
 
 struct ProfileView: View {
     @State var path = NavigationPath()
+    @StateObject var vm = ViewModel()
     
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
-                HeaderView(user: User.mockUser)
-                
-                InfoView()
-                
-                FollowCountView(followers: User.allUsers, following: User.allUsers)
-                
-                EditButton()
-                
-                PostListView()
-                
+                if vm.profileUIState == .loading {
+                    ProgressView()
+                } else {
+                    VStack {
+                        HeaderView(user: vm.currentUser)
+                        
+                        InfoView()
+                        
+                        FollowCountView(followers: vm.currentUser.followers, following: vm.currentUser.following)
+                        
+                        EditButton()
+                        
+                        PostListView()
+                    }
+                }
+            }
+            .task {
+                vm.fetchProfile()
             }
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)

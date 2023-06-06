@@ -23,6 +23,8 @@
 		07E04E602A2F49E900AFFC92 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E5F2A2F49E900AFFC92 /* UserRow.swift */; };
 		07E04E632A2F4A8300AFFC92 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E622A2F4A8300AFFC92 /* FollowingView.swift */; };
 		07E04E652A2F4B7F00AFFC92 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E642A2F4B7F00AFFC92 /* Route.swift */; };
+		07E04E672A2F4E2300AFFC92 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E662A2F4E2300AFFC92 /* ViewModel.swift */; };
+		07E04E692A2F4F5C00AFFC92 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E682A2F4F5C00AFFC92 /* UIState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		07E04E5F2A2F49E900AFFC92 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		07E04E622A2F4A8300AFFC92 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
 		07E04E642A2F4B7F00AFFC92 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		07E04E662A2F4E2300AFFC92 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		07E04E682A2F4F5C00AFFC92 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			children = (
 				07736FE02A2E0B2300FBF297 /* User.swift */,
 				07E04E642A2F4B7F00AFFC92 /* Route.swift */,
+				07E04E682A2F4F5C00AFFC92 /* UIState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				07736FE32A2E0C7C00FBF297 /* ProfileView.swift */,
+				07E04E662A2F4E2300AFFC92 /* ViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -236,9 +242,11 @@
 				07E04E5E2A2F496C00AFFC92 /* FollowersView.swift in Sources */,
 				07E04E652A2F4B7F00AFFC92 /* Route.swift in Sources */,
 				07736FD02A2E0AEC00FBF297 /* ProfileNavigationApp.swift in Sources */,
+				07E04E692A2F4F5C00AFFC92 /* UIState.swift in Sources */,
 				07736FF12A2E11DB00FBF297 /* PostListView.swift in Sources */,
 				07736FE92A2E0E8300FBF297 /* InfoView.swift in Sources */,
 				07E04E632A2F4A8300AFFC92 /* FollowingView.swift in Sources */,
+				07E04E672A2F4E2300AFFC92 /* ViewModel.swift in Sources */,
 				07736FED2A2E0FEE00FBF297 /* EditButton.swift in Sources */,
 				07736FEB2A2E0F3300FBF297 /* FollowCountView.swift in Sources */,
 				07736FEF2A2E10B900FBF297 /* PostRow.swift in Sources */,
