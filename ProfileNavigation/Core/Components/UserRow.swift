@@ -1,13 +1,15 @@
 //
-//  PostRow.swift
+//  UserRow.swift
 //  ProfileNavigation
 //
-//  Created by Eric on 05/06/2023.
+//  Created by Eric on 06/06/2023.
 //
 
 import SwiftUI
 
-struct PostRow: View {
+struct UserRow: View {
+    var user: User
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 15, style: .continuous)
@@ -15,7 +17,7 @@ struct PostRow: View {
                 .shadow(radius: 5)
             
             HStack(spacing: 20) {
-            Image(systemName: "pencil")
+            Image(systemName: "person")
                     .font(.system(size: 30))
                     .frame(width: 60, height: 60)
                     .foregroundColor(.purple)
@@ -23,10 +25,10 @@ struct PostRow: View {
                         .stroke(Color.purple, lineWidth: 2))
                 
                 VStack(alignment: .leading) {
-                    Text("Mock Post")
+                    Text(user.displayName)
                         .bold()
                     
-                    Text("Mock Content")
+                    Text(user.username)
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
@@ -38,8 +40,8 @@ struct PostRow: View {
     }
 }
 
-struct PostRow_Previews: PreviewProvider {
+struct UserRow_Previews: PreviewProvider {
     static var previews: some View {
-        PostRow()
+        UserRow(user: User.mockUser)
     }
 }

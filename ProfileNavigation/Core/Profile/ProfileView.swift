@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State var path = NavigationPath()
+    
     var body: some View {
-        VStack {
-            HeaderView(user: User.mockUser)
-            
-            InfoView()
-            
-            FollowCountView(followers: User.allUsers, following: User.allUsers)
-            
-            EditButton()
-            
-            PostListView()
-            
+        NavigationStack(path: $path) {
+            VStack {
+                HeaderView(user: User.mockUser)
+                
+                InfoView()
+                
+                FollowCountView(followers: User.allUsers, following: User.allUsers)
+                
+                EditButton()
+                
+                PostListView()
+                
+            }
         }
     }
 }

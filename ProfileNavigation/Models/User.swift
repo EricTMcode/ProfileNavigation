@@ -20,6 +20,6 @@ struct User: Identifiable {
         User(id: "lebronjames@nba.com", displayName: "LeBron James", username: "@kingjames"),
         User(id: "anthonydavis@nba.com", displayName: "Anthony Davis", username: "@thebrow"),
         User(id: "austinreavers@nba.com", displayName: "Austin Reaves", username: "@ar15"),
-        User(id: "dangelruseel@nba.com", displayName: "D'Angelo Russel", username: "dlo")
+        User(id: "dangelruseel@nba.com", displayName: "D'Angelo Russel", username: "@dlo")
     ]
 }

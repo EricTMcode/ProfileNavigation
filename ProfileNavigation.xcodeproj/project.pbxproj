@@ -19,6 +19,10 @@
 		07736FED2A2E0FEE00FBF297 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07736FEC2A2E0FEE00FBF297 /* EditButton.swift */; };
 		07736FEF2A2E10B900FBF297 /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07736FEE2A2E10B900FBF297 /* PostRow.swift */; };
 		07736FF12A2E11DB00FBF297 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07736FF02A2E11DB00FBF297 /* PostListView.swift */; };
+		07E04E5E2A2F496C00AFFC92 /* FollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E5D2A2F496C00AFFC92 /* FollowersView.swift */; };
+		07E04E602A2F49E900AFFC92 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E5F2A2F49E900AFFC92 /* UserRow.swift */; };
+		07E04E632A2F4A8300AFFC92 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E622A2F4A8300AFFC92 /* FollowingView.swift */; };
+		07E04E652A2F4B7F00AFFC92 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E642A2F4B7F00AFFC92 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		07736FEC2A2E0FEE00FBF297 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		07736FEE2A2E10B900FBF297 /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
 		07736FF02A2E11DB00FBF297 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		07E04E5D2A2F496C00AFFC92 /* FollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersView.swift; sourceTree = "<group>"; };
+		07E04E5F2A2F49E900AFFC92 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		07E04E622A2F4A8300AFFC92 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
+		07E04E642A2F4B7F00AFFC92 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				07736FE02A2E0B2300FBF297 /* User.swift */,
+				07E04E642A2F4B7F00AFFC92 /* Route.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +113,8 @@
 		07736FDF2A2E0B0E00FBF297 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				07E04E612A2F4A7800AFFC92 /* Following */,
+				07E04E5C2A2F495E00AFFC92 /* Followers */,
 				07736FE52A2E0CB700FBF297 /* Components */,
 				07736FE22A2E0C7000FBF297 /* Profile */,
 			);
@@ -127,8 +138,25 @@
 				07736FEC2A2E0FEE00FBF297 /* EditButton.swift */,
 				07736FEE2A2E10B900FBF297 /* PostRow.swift */,
 				07736FF02A2E11DB00FBF297 /* PostListView.swift */,
+				07E04E5F2A2F49E900AFFC92 /* UserRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		07E04E5C2A2F495E00AFFC92 /* Followers */ = {
+			isa = PBXGroup;
+			children = (
+				07E04E5D2A2F496C00AFFC92 /* FollowersView.swift */,
+			);
+			path = Followers;
+			sourceTree = "<group>";
+		};
+		07E04E612A2F4A7800AFFC92 /* Following */ = {
+			isa = PBXGroup;
+			children = (
+				07E04E622A2F4A8300AFFC92 /* FollowingView.swift */,
+			);
+			path = Following;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +232,13 @@
 				07736FE72A2E0CD400FBF297 /* HeaderView.swift in Sources */,
 				07736FE42A2E0C7C00FBF297 /* ProfileView.swift in Sources */,
 				07736FD22A2E0AEC00FBF297 /* ContentView.swift in Sources */,
+				07E04E602A2F49E900AFFC92 /* UserRow.swift in Sources */,
+				07E04E5E2A2F496C00AFFC92 /* FollowersView.swift in Sources */,
+				07E04E652A2F4B7F00AFFC92 /* Route.swift in Sources */,
 				07736FD02A2E0AEC00FBF297 /* ProfileNavigationApp.swift in Sources */,
 				07736FF12A2E11DB00FBF297 /* PostListView.swift in Sources */,
 				07736FE92A2E0E8300FBF297 /* InfoView.swift in Sources */,
+				07E04E632A2F4A8300AFFC92 /* FollowingView.swift in Sources */,
 				07736FED2A2E0FEE00FBF297 /* EditButton.swift in Sources */,
 				07736FEB2A2E0F3300FBF297 /* FollowCountView.swift in Sources */,
 				07736FEF2A2E10B900FBF297 /* PostRow.swift in Sources */,
