@@ -14,6 +14,7 @@ class ViewModel: ObservableObject {
     
     @Published var otherUser = User.emptyUser
     @Published var otherProfileUIState: UIState = .loading
+    var previousUserID = ""
     
     func fetchProfile() {
         DispatchQueue.main.asyncAfter(wallDeadline: .now() + 1, execute:  {
@@ -27,10 +28,18 @@ class ViewModel: ObservableObject {
     func fetchOtherProfile(otherUserId: String) {
         DispatchQueue.main.asyncAfter(wallDeadline: .now() + 1, execute: {
             self.otherUser = User.allUsers.first(where: {$0.id == otherUserId}) ?? User.emptyUser
+            self.previousUserID = self.otherUser.id
             self.otherUser.followers = User.allUsers.filter {$0.id != otherUserId}
             self.otherUser.following = User.allUsers.filter {$0.id != otherUserId}
-            self.profileUIState = .loaded
+            self.otherProfileUIState = .loaded
         })
     }
     
+    func resetOtherProfile(otherUserId: String) {
+        if previousUserID != otherUserId {
+            DispatchQueue.main.async(execute: {
+                self.otherProfileUIState = .loading
+            })
+        }
+    }
 }

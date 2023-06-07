@@ -11,4 +11,6 @@ enum Route: Hashable {
     case followers
     case following
     case otherProfile(String)
+    case otherFollowers
+    case otherFollowing
 }

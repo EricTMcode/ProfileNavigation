@@ -14,7 +14,10 @@ struct FollowersView: View {
         ScrollView {
             LazyVStack {
                 ForEach(followers) { user in
-                    UserRow(user: user)
+                    NavigationLink(value: Route.otherProfile(user.id)) {
+                        UserRow(user: user)
+                    }
+                    .buttonStyle(PlainButtonStyle())
                 }
             }
         }

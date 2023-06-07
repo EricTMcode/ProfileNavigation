@@ -26,6 +26,9 @@
 		07E04E672A2F4E2300AFFC92 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E662A2F4E2300AFFC92 /* ViewModel.swift */; };
 		07E04E692A2F4F5C00AFFC92 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E682A2F4F5C00AFFC92 /* UIState.swift */; };
 		07E04E6D2A2F522E00AFFC92 /* OtherProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E6C2A2F522E00AFFC92 /* OtherProfileView.swift */; };
+		07E04E712A2F5ACA00AFFC92 /* OtherFollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E702A2F5ACA00AFFC92 /* OtherFollowersView.swift */; };
+		07E04E732A2F5AF100AFFC92 /* OtherFollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E722A2F5AF100AFFC92 /* OtherFollowingView.swift */; };
+		07E04E752A2F5B9300AFFC92 /* OtherFollowCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E04E742A2F5B9300AFFC92 /* OtherFollowCountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		07E04E662A2F4E2300AFFC92 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		07E04E682A2F4F5C00AFFC92 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 		07E04E6C2A2F522E00AFFC92 /* OtherProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileView.swift; sourceTree = "<group>"; };
+		07E04E702A2F5ACA00AFFC92 /* OtherFollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFollowersView.swift; sourceTree = "<group>"; };
+		07E04E722A2F5AF100AFFC92 /* OtherFollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFollowingView.swift; sourceTree = "<group>"; };
+		07E04E742A2F5B9300AFFC92 /* OtherFollowCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFollowCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +126,9 @@
 		07736FDF2A2E0B0E00FBF297 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				07E04E6A2A2F520E00AFFC92 /* AnotherProfile */,
+				07E04E6F2A2F5AB700AFFC92 /* OtherFollowing */,
+				07E04E6E2A2F5AA500AFFC92 /* OtherFollowers */,
+				07E04E6A2A2F520E00AFFC92 /* OtherProfile */,
 				07E04E612A2F4A7800AFFC92 /* Following */,
 				07E04E5C2A2F495E00AFFC92 /* Followers */,
 				07736FE52A2E0CB700FBF297 /* Components */,
@@ -168,12 +176,29 @@
 			path = Following;
 			sourceTree = "<group>";
 		};
-		07E04E6A2A2F520E00AFFC92 /* AnotherProfile */ = {
+		07E04E6A2A2F520E00AFFC92 /* OtherProfile */ = {
 			isa = PBXGroup;
 			children = (
 				07E04E6C2A2F522E00AFFC92 /* OtherProfileView.swift */,
+				07E04E742A2F5B9300AFFC92 /* OtherFollowCountView.swift */,
 			);
-			path = AnotherProfile;
+			path = OtherProfile;
+			sourceTree = "<group>";
+		};
+		07E04E6E2A2F5AA500AFFC92 /* OtherFollowers */ = {
+			isa = PBXGroup;
+			children = (
+				07E04E702A2F5ACA00AFFC92 /* OtherFollowersView.swift */,
+			);
+			path = OtherFollowers;
+			sourceTree = "<group>";
+		};
+		07E04E6F2A2F5AB700AFFC92 /* OtherFollowing */ = {
+			isa = PBXGroup;
+			children = (
+				07E04E722A2F5AF100AFFC92 /* OtherFollowingView.swift */,
+			);
+			path = OtherFollowing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,17 +272,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				07736FE72A2E0CD400FBF297 /* HeaderView.swift in Sources */,
+				07E04E712A2F5ACA00AFFC92 /* OtherFollowersView.swift in Sources */,
 				07736FE42A2E0C7C00FBF297 /* ProfileView.swift in Sources */,
 				07736FD22A2E0AEC00FBF297 /* ContentView.swift in Sources */,
 				07E04E602A2F49E900AFFC92 /* UserRow.swift in Sources */,
 				07E04E6D2A2F522E00AFFC92 /* OtherProfileView.swift in Sources */,
 				07E04E5E2A2F496C00AFFC92 /* FollowersView.swift in Sources */,
+				07E04E732A2F5AF100AFFC92 /* OtherFollowingView.swift in Sources */,
 				07E04E652A2F4B7F00AFFC92 /* Route.swift in Sources */,
 				07736FD02A2E0AEC00FBF297 /* ProfileNavigationApp.swift in Sources */,
 				07E04E692A2F4F5C00AFFC92 /* UIState.swift in Sources */,
 				07736FF12A2E11DB00FBF297 /* PostListView.swift in Sources */,
 				07736FE92A2E0E8300FBF297 /* InfoView.swift in Sources */,
 				07E04E632A2F4A8300AFFC92 /* FollowingView.swift in Sources */,
+				07E04E752A2F5B9300AFFC92 /* OtherFollowCountView.swift in Sources */,
 				07E04E672A2F4E2300AFFC92 /* ViewModel.swift in Sources */,
 				07736FED2A2E0FEE00FBF297 /* EditButton.swift in Sources */,
 				07736FEB2A2E0F3300FBF297 /* FollowCountView.swift in Sources */,

@@ -43,6 +43,10 @@ struct ProfileView: View {
                     FollowingView(following: vm.currentUser.following)
                 case let .otherProfile(otherUserId):
                     OtherProfileView(vm: vm, otherUserId: otherUserId)
+                case .otherFollowers:
+                    OtherFollowersView(followers: vm.otherUser.followers, path: $path)
+                case .otherFollowing:
+                    OtherFollowingView(following: vm.otherUser.following, path: $path)
                 }
             }
         }

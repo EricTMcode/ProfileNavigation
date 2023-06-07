@@ -21,7 +21,7 @@ struct OtherProfileView: View {
                     
                     InfoView()
                     
-                    FollowCountView(followers: vm.otherUser.followers, following: vm.otherUser.following)
+                    OtherFollowCountView(followers: vm.otherUser.followers, following: vm.otherUser.following)
                     
                     EditButton()
                     
@@ -30,6 +30,7 @@ struct OtherProfileView: View {
             }
         }
         .task {
+            vm.resetOtherProfile(otherUserId: otherUserId)
             vm.fetchOtherProfile(otherUserId: otherUserId)
         }
         .navigationTitle(vm.otherUser.username)
